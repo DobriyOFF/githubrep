@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.search-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Стили для элементов списка репозиториев (repository-list) */
+.repository-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.repository-list li strong {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.repository-list li span {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.repository-list li button {
+    margin-top: 10px;
+    background-color: #ff3e3e;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.repository-list li button:hover {
+    background-color: #cc3232;
+}
+
+/* Стили для выпадающего списка */
+.autocomplete-list {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.autocomplete-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid #ccc;
+}
+
+.autocomplete-list li:hover {
+    background-color: #f0f0f0;
+}
